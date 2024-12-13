@@ -6,8 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    @foreach($gift_types as $gifttype)
-    {{$gifttype->type}}
+@foreach($gifts as $gift)
+    {{$gift->gift_name}}
+    @endforeach
+
+    @foreach($gifts as $gift)
+    {{$gift->price}}
+    @endforeach
+
+    @foreach($gifts as $gift)
+    {{$gift->gift_type_id}}
     @endforeach
 </body>
 </html>
